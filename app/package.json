@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
-    "lint": "eslint \"src/**/*.{ts,tsx}\" --quiet"
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --quiet",
+    "cypress:web": "npx cypress open",
+    "cypress:headless": "npx cypress run --browser electron"
   },
   "dependencies": {
     "next": "14.2.7",
@@ -20,6 +22,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "cypress": "^13.14.0",
     "eslint": "^9.9.1",
     "eslint-config-next": "14.2.7",
     "eslint-config-prettier": "^9.1.0",
